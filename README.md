@@ -83,6 +83,19 @@ Train and Test datasets have same structure composed of 35 columns. Funcionality
 
 ## HoliLoc Feature Vectors and Embeddings
 
+The resources to access the pre-generated feature vectors and embeddings from the training and test datasets of HoliLoc are as follows:
+
+All of them supplied as zip file containing files for train and test separetely and in numpy array format.
+
+Image feature vectors resized to 224x224 pixels and normalized by dividing to 255: [Image Feature Vectors](https://drive.google.com/file/d/1cRPBHait35_IxuiNX9JEHwH_nt4ayv1r/view?usp=drive_link)
+Sequence embeddings produced with ProtT5, which are also found on train and test dataset sequence_embedding column provided as numpy array for the ease of user : [Sequence Embeddings](https://drive.google.com/file/d/17tiLTWf-_W8VumSn7W9T7u1Hawy5OZyP/view?usp=drive_link)
+PPI embedings obtained with graph learning and Node2Vec algorithm can be found here as numpy array for train and test separetely also: [PPI Embeddings](https://drive.google.com/file/d/15er4HxVvicOnAlr8IzRxxGdVEFURQ2bi/view?usp=drive_link)
+
+
+
+
+
+
 ## Predicting Protein Subcellular Localization Using Pre-trained Models
 
 * Pre-trained HoliLoc models are available here: [HoliLoc Multi-Location Models](https://drive.google.com/file/d/13NdMsYFzJcg_I6E8n_AJKAVICjQ32d9l/view?usp=drive_link).
