@@ -1,6 +1,7 @@
 # HoliLoc
 
 
+<img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
 
 
 ## Classification Models 
