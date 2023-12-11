@@ -1,4 +1,5 @@
 # HoliLoc
+
 Understanding the subcellular locations of proteins is essential for 
 investigations in systems biology, proteomics, drug development, and protein 
 function. Out of the 20,394 reviewed human proteins, 7348 have localization 
@@ -9,7 +10,15 @@ data holistically. In addition, there is very little data on the localization of
 holistically has increased in light of the development of artificial intelligence-based 
 approaches and growing data diversity opportunities. It is only recently that the 
 method of predicting subcellular localization by combining various forms of data 
-from genome and proteome centered studies has started to draw interest.
+from genome and proteome centered studies has started to draw interest. amino acid sequence, 
+and interactome/ protein protein interaction (PPI) data are utilized together for 
+human proteins and deep learning models are constructed by taking account the 
+simplicity to mainly observe the data diversity impact. Hence, 3 different data types 
+are obtained from the public biological data sources and organized according to the 
+scope in which all proteins belong to human and containing only one member of the 
+UniRef50 cluster to standardize and prevent redundancy. HoliLoc allows us to use different data together for protein subcellular localization for 22 different 
+locations in multi-class and multi-label manner.
+
 
 <img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
 
