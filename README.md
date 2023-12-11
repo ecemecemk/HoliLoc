@@ -59,7 +59,7 @@ Each of these layers collectively enables the model to understand complicated
 patterns within protein interactions. The final dense layer, comprising 22 units with a 
 sigmoid activation, serves as the output layer for our classification task (Figure 3.12). 
 The architecture is designed for input data with dimensions (224,). Model is 
-compiled using the Adam optimizer with a binary cross-entropy loss. ![HoliLoc PPI](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_PPI.svg)
+compiled using the Adam optimizer with a binary cross-entropy loss. [HoliLoc PPI](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_PPI.svg)
 
 
 
