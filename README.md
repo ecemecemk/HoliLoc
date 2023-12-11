@@ -45,41 +45,41 @@ HoliLoc Model leverages joint fusion, combining feature representations from int
 
 Train and Test datasets have same structure composed of 35 columns. Funcionality and meaning of each column as follows:
 
-Cluster_ID --> UniRes Cluster ID of protein
-UNIPROT --> Uniprot ID of protein
-GENE
-GO_ID
-CELLLINE
-ORGANISIM
-IMAGE_URL
-IMAGE_URL_R
-IMAGE_URL_G
-IMAGE_URL_B
-IMAGE_URL_Y
-B
-sequence_embedding
-Actin_filaments
-Aggresome
-Cell_junctions
-MTOC
-Centrosome
-Cytoplasmic_bodies
-Cytosol
-ER 
-Focal_adhesion_sites
-Golgi_apparatus
-Intermediate_filaments
-Microtubules
-Mitotic_spindle
-Nuclear_bodies
-Nuclear_membrane
-Nuclear_speckles
-Nucleoli
-Nucleoli_fibrillar_center
-PM
-Nucleoplasm
-Mitochondria
-Cytokinetic_bridge
+* Cluster_ID --> UniRes Cluster ID of protein
+* UNIPROT --> Uniprot ID of protein
+* GENE --> HGNC Symbol of associated gene of protein 
+* GO_ID --> Cellular Component ID
+* CELLLINE --> Cellline information of protein
+* ORGANISIM --> Organism information of protein ( all is human)
+* IMAGE_URL --> URL of Confocal fluorescence microscopy image showing all channels (green: Target protein, blue: Nucleus, red: Microtubules, ywllow: ER)
+* IMAGE_URL_R --> URL of Confocal fluorescence microscopy image showing red channel only
+* IMAGE_URL_G --> URL of Confocal fluorescence microscopy image showing green channel only
+* IMAGE_URL_B --> URL of Confocal fluorescence microscopy image showing blue channel only
+* IMAGE_URL_Y --> URL of Confocal fluorescence microscopy image showing yellow channel only
+* B --> UniProt IDs of proteins interation with protein. (comma separeted if multiple)
+* sequence_embedding --> 1024 sized amino-acid sequence embeddings obtained with ProtT5
+* Actin_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Aggresome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Cell_junctions --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* MTOC --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Centrosome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Cytoplasmic_bodies --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Cytosol --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* ER --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Focal_adhesion_sites --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Golgi_apparatus --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Intermediate_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Microtubules --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Mitotic_spindle --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Nuclear_bodies --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Nuclear_membrane --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Nuclear_speckles --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Nucleoli --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Nucleoli_fibrillar_center --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* PM --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Nucleoplasm --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Mitochondria --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Cytokinetic_bridge --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
 
 
 ## Predicting Protein Subcellular Localization Using Pre-trained Models
