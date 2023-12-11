@@ -1,6 +1,6 @@
 # HoliLoc
 
-<kbd>Tab</kbd> Understanding protein subcellular locations is crucial in systems biology, drug development, and proteomics. Of the 20,394 human proteins, only 7,348 have experimentally verified localization annotations (UniProt, 2020_05). Leveraging AI and diverse data is essential. HoliLoc integrates amino acid sequences, interactome data, and protein-protein interactions for human proteins. Our deep learning model covers 22 locations in a multi-class, multi-label approach. Utilize HoliLoc for holistic protein subcellular localization insights.
+  Understanding protein subcellular locations is crucial in systems biology, drug development, and proteomics. Of the 20,394 human proteins, only 7,348 have experimentally verified localization annotations (UniProt, 2020_05). Leveraging AI and diverse data is essential. HoliLoc integrates amino acid sequences, interactome data, and protein-protein interactions for human proteins. Our deep learning model covers 22 locations in a multi-class, multi-label approach. Utilize HoliLoc for holistic protein subcellular localization insights.
 
 
 <img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
@@ -8,7 +8,7 @@
 
 ## Classification Models 
 
-<kbd>Tab</kbd> HoliLoc enhances protein subcellular localization (SL) prediction through diverse data modalities: image, sequence, and interactome-protein-protein interaction (PPI). Our deep learning models, implemented in TensorFlow with Keras, ensure comprehensive insights into SL.
+  HoliLoc enhances protein subcellular localization (SL) prediction through diverse data modalities: image, sequence, and interactome-protein-protein interaction (PPI). Our deep learning models, implemented in TensorFlow with Keras, ensure comprehensive insights into SL.
 ### Image Model
 
   Image embeddings were employed as input for CNN, which has a total of 20 
