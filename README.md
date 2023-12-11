@@ -3,7 +3,7 @@
 Understanding the subcellular locations of proteins is essential for 
 investigations in systems biology, proteomics, drug development, and protein 
 function. Out of the 20,394 reviewed human proteins, 7348 have localization 
-annotation with experimental verification, according to UniProt's (version 2020_05). Additionally, there is very little data on sub-organellar compartment localization. 
+annotation with experimental verification, according to UniProt's (version 2020_05). Additionally, there is very little data on suborganellar compartment localization. 
 Approaches based on artificial intelligence have evolved nowadays, and data variety 
 has grown. It has become more crucial to develop deep learning models that utilize 
 data holistically. In addition, there is very little data on the localization of suborganellar compartments. The importance of utilizing different data resources 
