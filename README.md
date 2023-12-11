@@ -11,7 +11,7 @@ outlined three key modalities, image, sequence and interactome-PPI. In this thes
 the deep learning models were constructed using the TensorFlow framework with the 
 Keras.
 
-##Image Model
+### Image Model
 
   Image embeddings were employed as input for CNN, which has a total of 20 
 layers, which includes convolutional layers, pooling layers, dropout layers, flatten 
@@ -35,7 +35,9 @@ classification where each class can be associated with multiple labels, in this 
 is appropriate for proteins’ presence in multiple locations. Model is compiled using 
 the Adam optimizer with a binary cross-entropy loss.
 
-##Sequence Model
+
+
+### Sequence Model
 
   The protein sequence embeddings are given into the FFN model composed of 
 16 layers in total, which include dense layers, batch normalization layers, activation 
@@ -48,7 +50,7 @@ activation, designed for sequence classification tasks. Model is designed for
 sequences with an input shape of (1024,). Model is compiled using the Adam 
 optimizer with a binary cross-entropy loss.
 
-##Interactome Model (PPI)
+### Interactome Model (PPI)
 
   Interactome FFN composed of 20 layers. The model includes dense layers 
 with varying units (128, 64, 64, 32, 32), batch normalization layers, activation layers 
@@ -60,7 +62,7 @@ The architecture is designed for input data with dimensions (224,). Model is
 compiled using the Adam optimizer with a binary cross-entropy loss.
 
 
-##Model Fusion (HoliLoc)
+### Model Fusion (HoliLoc)
 
   To harness the synergistic potential of three distinct modalities HoliLoc 
 employs a technique known as joint fusion, also referred to as intermediate fusion. 
