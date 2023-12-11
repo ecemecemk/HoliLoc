@@ -33,7 +33,7 @@ data with dimensions (224, 224, 3). Sigmoid activation allows each output unit t
 independently produce values in the range [0, 1], which aligns well with multilabel 
 classification where each class can be associated with multiple labels, in this case, it 
 is appropriate for proteins’ presence in multiple locations. Model is compiled using 
-the Adam optimizer with a binary cross-entropy loss. For the detailed model structure click: [HoliLoc Image](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_image.svg)
+the Adam optimizer with a binary cross-entropy loss. For the detailed model structure click [HoliLoc Image](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_image.svg)
 
 
 
@@ -49,7 +49,7 @@ dropout regularization is applied to cope with overfitting and to boost model
 robustness.(Figure 3.11). The output layer consists of 22 units with sigmoid 
 activation, designed for sequence classification tasks. Model is designed for 
 sequences with an input shape of (1024,). Model is compiled using the Adam 
-optimizer with a binary cross-entropy loss. For the detailed model structure click: [HoliLoc Sequence Diagram](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_sequence.svg)
+optimizer with a binary cross-entropy loss. For the detailed model structure click [HoliLoc Sequence Diagram](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_sequence.svg)
 
 
 ### Interactome Model (PPI)
@@ -61,7 +61,7 @@ Each of these layers collectively enables the model to understand complicated
 patterns within protein interactions. The final dense layer, comprising 22 units with a 
 sigmoid activation, serves as the output layer for our classification task (Figure 3.12). 
 The architecture is designed for input data with dimensions (224,). Model is 
-compiled using the Adam optimizer with a binary cross-entropy loss. For the detailed model structure click: [HoliLoc PPI](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_PPI.svg)
+compiled using the Adam optimizer with a binary cross-entropy loss. For the detailed model structure click [HoliLoc PPI](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_PPI.svg)
 
 
 
@@ -79,5 +79,5 @@ of 17 layers in which 6 dense layers, batch normalization, activation, and dropo
 layers exist. The final output layer utilizes sigmoid activation for multi-label 
 classification with 22 classes (Figure 3.13). Model is compiled using the Adam 
 optimizer and binary cross-entropy loss. The model's architecture consists of a total 
-of 4,663,606 parameters, with 4,654,390 being trainable and an additional 9,216 nontrainable. For the detailed model structure click: [HoliLoc Fused](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_fused.svg)
+of 4,663,606 parameters, with 4,654,390 being trainable and an additional 9,216 nontrainable. For the detailed model structure click [HoliLoc Fused](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_fused.svg)
 
