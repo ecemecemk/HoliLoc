@@ -43,6 +43,44 @@ HoliLoc Model leverages joint fusion, combining feature representations from int
 * Train dataset of the HoliLoc can be obtained here: [HoliLoc Train Dataset](https://drive.google.com/file/d/1GYRaLahUbSjXuyHJSdqpa043D5ZPRUXC/view?usp=drive_link)
 * Test dataset of the HoliLoc can be obtained here: [HoliLoc Test Dataset](https://drive.google.com/file/d/1mvobd_R86PSKYEpcN4cCp-fvm91RcyYW/view?usp=drive_link)
 
+Train and Test datasets have same structure composed of 35 columns. Funcionality and meaning of each column as follows:
+
+Cluster_ID --> UniRes Cluster ID of protein
+UNIPROT --> Uniprot ID of protein
+GENE
+GO_ID
+CELLLINE
+ORGANISIM
+IMAGE_URL
+IMAGE_URL_R
+IMAGE_URL_G
+IMAGE_URL_B
+IMAGE_URL_Y
+B
+sequence_embedding
+Actin_filaments
+Aggresome
+Cell_junctions
+MTOC
+Centrosome
+Cytoplasmic_bodies
+Cytosol
+ER 
+Focal_adhesion_sites
+Golgi_apparatus
+Intermediate_filaments
+Microtubules
+Mitotic_spindle
+Nuclear_bodies
+Nuclear_membrane
+Nuclear_speckles
+Nucleoli
+Nucleoli_fibrillar_center
+PM
+Nucleoplasm
+Mitochondria
+Cytokinetic_bridge
+
 
 ## Predicting Protein Subcellular Localization Using Pre-trained Models
 
