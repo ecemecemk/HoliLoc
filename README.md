@@ -81,6 +81,7 @@ Train and Test datasets have same structure composed of 35 columns. Funcionality
 * Mitochondria --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
 * Cytokinetic_bridge --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
 
+## HoliLoc Feature Vectors and Embeddings
 
 ## Predicting Protein Subcellular Localization Using Pre-trained Models
 
