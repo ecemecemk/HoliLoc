@@ -58,28 +58,28 @@ Train and Test datasets have same structure composed of 35 columns. Funcionality
 * IMAGE_URL_Y --> URL of Confocal fluorescence microscopy image showing yellow channel only
 * B --> UniProt IDs of proteins interation with protein. (comma separeted if multiple)
 * sequence_embedding --> 1024 sized amino-acid sequence embeddings obtained with ProtT5
-* Actin_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Aggresome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Cell_junctions --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* MTOC --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Centrosome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Cytoplasmic_bodies --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Cytosol --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* ER --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Focal_adhesion_sites --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Golgi_apparatus --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Intermediate_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Microtubules --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Mitotic_spindle --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Nuclear_bodies --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Nuclear_membrane --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Nuclear_speckles --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Nucleoli --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Nucleoli_fibrillar_center --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* PM --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Nucleoplasm --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Mitochondria --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
-* Cytokinetic_bridge --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name.
+* Actin_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Aggresome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Cell_junctions --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* MTOC --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Centrosome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Cytoplasmic_bodies --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Cytosol --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* ER --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Focal_adhesion_sites --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Golgi_apparatus --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Intermediate_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Microtubules --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Mitotic_spindle --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Nuclear_bodies --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Nuclear_membrane --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Nuclear_speckles --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Nucleoli --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Nucleoli_fibrillar_center --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* PM --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Nucleoplasm --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Mitochondria --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
+* Cytokinetic_bridge --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
 
 
 ## Predicting Protein Subcellular Localization Using Pre-trained Models
