@@ -101,6 +101,13 @@ classification with 22 classes (Figure 3.13). Model is compiled using the Adam
 optimizer and binary cross-entropy loss. The model's architecture consists of a total 
 of 4,663,606 parameters, with 4,654,390 being trainable and an additional 9,216 nontrainable. For the detailed model structure click [HoliLoc Fused](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_fused.svg).
 
+
+## HoliLoc Datasets
+
+Train dataset of the HoliLoc can be obtained here: [HoliLoc Train Dataset](https://drive.google.com/file/d/1GYRaLahUbSjXuyHJSdqpa043D5ZPRUXC/view?usp=drive_link)
+Test dataset of the HoliLoc can be obtained here: [HoliLoc Test Dataset](https://drive.google.com/file/d/1mvobd_R86PSKYEpcN4cCp-fvm91RcyYW/view?usp=drive_link)
+
+
 ## Predicting Protein Subcellular Localization Using Pre-trained Models
 
 Pre-trained HoliLoc models are available here: [HoliLoc Multi-Location Models](https://drive.google.com/file/d/13NdMsYFzJcg_I6E8n_AJKAVICjQ32d9l/view?usp=drive_link).
