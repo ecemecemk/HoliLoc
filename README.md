@@ -1,5 +1,15 @@
 # HoliLoc
-
+Understanding the subcellular locations of proteins is essential for 
+investigations in systems biology, proteomics, drug development, and protein 
+function. Out of the 20,394 reviewed human proteins, 7348 have localization 
+annotation with experimental verification, according to UniProt's (version 2020_05). Additionally, there is very little data on sub-organellar compartment localization. 
+Approaches based on artificial intelligence have evolved nowadays, and data variety 
+has grown. It has become more crucial to develop deep learning models that utilize 
+data holistically. In addition, there is very little data on the localization of suborganellar compartments. The importance of utilizing different data resources 
+holistically has increased in light of the development of artificial intelligence-based 
+approaches and growing data diversity opportunities. It is only recently that the 
+method of predicting subcellular localization by combining various forms of data 
+from genome and proteome centered studies has started to draw interest.
 
 <img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
 
