@@ -51,7 +51,7 @@ Train and Test datasets have same structure composed of 35 columns. Funcionality
 * GO_ID --> Cellular Component ID
 * CELLLINE --> Cellline information of protein
 * ORGANISIM --> Organism information of protein ( all is human)
-* IMAGE_URL --> URL of Confocal fluorescence microscopy image showing all channels (green: Target protein, blue: Nucleus, red: Microtubules, ywllow: ER)
+* IMAGE_URL --> URL of Confocal fluorescence microscopy image showing all channels (green: Target protein, blue: Nucleus, red: Microtubules, yellow: ER)
 * IMAGE_URL_R --> URL of Confocal fluorescence microscopy image showing red channel only
 * IMAGE_URL_G --> URL of Confocal fluorescence microscopy image showing green channel only
 * IMAGE_URL_B --> URL of Confocal fluorescence microscopy image showing blue channel only
