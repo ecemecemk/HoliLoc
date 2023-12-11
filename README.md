@@ -1,23 +1,6 @@
 # HoliLoc
 
-Understanding the subcellular locations of proteins is essential for 
-investigations in systems biology, proteomics, drug development, and protein 
-function. Out of the 20,394 reviewed human proteins, 7348 have localization 
-annotation with experimental verification, according to UniProt's (version 2020_05). Additionally, there is very little data on suborganellar compartment localization. 
-Approaches based on artificial intelligence have evolved nowadays, and data variety 
-has grown. It has become more crucial to develop deep learning models that utilize 
-data holistically. In addition, there is very little data on the localization of suborganellar compartments. The importance of utilizing different data resources 
-holistically has increased in light of the development of artificial intelligence-based 
-approaches and growing data diversity opportunities. It is only recently that the 
-method of predicting subcellular localization by combining various forms of data 
-from genome and proteome centered studies has started to draw interest. amino acid sequence, 
-and interactome/ protein protein interaction (PPI) data are utilized together for 
-human proteins and deep learning models are constructed by taking account the 
-simplicity to mainly observe the data diversity impact. Hence, 3 different data types 
-are obtained from the public biological data sources and organized according to the 
-scope in which all proteins belong to human and containing only one member of the 
-UniRef50 cluster to standardize and prevent redundancy. HoliLoc allows us to use different data together for protein subcellular localization for 22 different 
-locations in multi-class and multi-label manner.
+<kbd>Tab</kbd> Understanding protein subcellular locations is crucial in systems biology, drug development, and proteomics. Of the 20,394 human proteins, only 7,348 have experimentally verified localization annotations (UniProt, 2020_05). Leveraging AI and diverse data is essential. HoliLoc integrates amino acid sequences, interactome data, and protein-protein interactions for human proteins. Our deep learning model covers 22 locations in a multi-class, multi-label approach. Utilize HoliLoc for holistic protein subcellular localization insights.
 
 
 <img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
@@ -25,12 +8,7 @@ locations in multi-class and multi-label manner.
 
 ## Classification Models 
 
-  HoliLoc leverages a diverse range of data modalities to enhance predictive 
-accuracy and provide a comprehensive understanding of protein SL. Our approach 
-outlined three key modalities, image, sequence and interactome-PPI. In this thesis, 
-the deep learning models were constructed using the TensorFlow framework with the 
-Keras.
-
+<kbd>Tab</kbd> HoliLoc enhances protein subcellular localization (SL) prediction through diverse data modalities: image, sequence, and interactome-protein-protein interaction (PPI). Our deep learning models, implemented in TensorFlow with Keras, ensure comprehensive insights into SL.
 ### Image Model
 
   Image embeddings were employed as input for CNN, which has a total of 20 
