@@ -98,7 +98,7 @@ All of them supplied as zip file containing files for train and test separetely 
 
 ## Predicting Protein Subcellular Localization Using Pre-trained Models
 
-* Pre-trained HoliLoc models are available here: [HoliLoc Multi-Location Models](https://drive.google.com/file/d/13NdMsYFzJcg_I6E8n_AJKAVICjQ32d9l/view?usp=drive_link).
+* Pre-trained HoliLoc models are available here: [HoliLoc Multi-Location Models](https://drive.google.com/file/d/1WjM7x-tlOxJfUIyGsTRhbS6FOpjIrv4Z/view?usp=drive_link).
 * If you want to get binary HoliLoc models for each subcellular localization HoliLoc models are available here: [HoliLoc Single-Location Models](https://drive.google.com/file/d/1O99X19bUd82exS2aby_bpKDttS5qQnri/view?usp=drive_link)
 
 
