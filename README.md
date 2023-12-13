@@ -109,5 +109,8 @@ All of them supplied as zip file containing files for train and test separetely 
 * To these materials you have to add the confocal microscopy image of protein in any size you want with the name of UNIPROT in PNG format. For example: P68431.png
 * Before running Python file, you have to edit the target_protein line. For example: target_protein = "P68431"
 * As an example inference file contains P68431.png and target_protein set to "P68431" .
+Inference file can be downloadad here: [Inference File](https://drive.google.com/file/d/1_EBhvl1yWK8M1gdxbovRy-wpjSUOjHMQ/view?usp=drive_link).
+
+To find unique proteins to try. 
 
 
