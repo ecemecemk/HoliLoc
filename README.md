@@ -104,4 +104,7 @@ Inference file can be downloadad here: [Inference File](https://drive.google.com
 
 To find unique proteins to try. 
 
+-----------------------------------------------------------
+# Predicting Protein Subcellular Location
 
+Fine-tuned HoliLoc Model available for download here.
