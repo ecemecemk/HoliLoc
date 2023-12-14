@@ -107,6 +107,7 @@ To find unique proteins to try.
 -----------------------------------------------------------
 # Predicting Protein Subcellular Location
 
+Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1K5oxBk3G-G5hIoTBEDT-gVoUtVRSqQEG/view?usp=drive_link). All you need to add here is png file of protein of interest.
 ## Dependencies
 
 Make sure you have the following dependencies installed before running the script:
@@ -116,12 +117,17 @@ Make sure you have the following dependencies installed before running the scrip
 - [OpenCV](https://opencv.org/): `pip install opencv-python`
 - [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow`
 
-Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1K5oxBk3G-G5hIoTBEDT-gVoUtVRSqQEG/view?usp=drive_link). All you need to add here is png file of protein of interest.
 
-To get the subcellular location prediction of protein of interest please run the command below.
+To get the subcellular location prediction of protein of interest please open terminal and navigate to the directory where your script is located and run the command below by changing the arguments according to your system.
 
 ```
 python protein_location_predictor.py --target_protein P68431 --image_path path/to/your/image.png --holiloc_model_path path/to/your/HoliLoc_model.h5 --sequence_embeddings_path path/to/your/sequence_embeddings_all_proteins.h5 --ppi_embeddings_path path/to/your/human_ppı_embeddings_all_proteins.csv
 ```
 
-Change the indicated arguments for different tasks.
+Change the indicated arguments for your task.
+
+*--target_protein: UniProt ID of target protein.
+*--image_path: Path of png file of protein confocal microscopy image.
+*--holiloc_model_path: Path of HoliLoc model h5 file which is inside the downloaded file.
+*--sequence_embeddings_path: Path of sequence_embeddings_all_proteins.h5 file which is inside the downloaded file.
+*--ppi_embeddings_path: Path of human_ppı_embeddings_all_proteins.csv file which is inside the downloaded file.
