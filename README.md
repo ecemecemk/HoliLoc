@@ -84,22 +84,6 @@ All of them supplied as zip file containing files for train and test separetely 
 
 
 
-
-
-# How to Predict Protein Subcellular Localization of New Protein
-
-* Eventhough, a protein is not in train or test dataset of the HoliLoc, if confocal microscopy image, ProtT5 embedding and PPI information exist you can predict SL by using pre_trained models. To achieve this an inference file created. Inference file composed of following materials:
-
-* 1- per-protein.h5 --> necessery file to obtain sequence embeddings.
-* 2- Human_PPI_Graph_Embeddings.csv --> Graph embeddings of all human proteins.
-* 3- HoliLoc_Inference-New_Protein.py --> Python file of inference process.
-* To these materials you have to add the confocal microscopy image of protein in any size you want with the name of UNIPROT in PNG format. For example: P68431.png
-* Before running Python file, you have to edit the target_protein line. For example: target_protein = "P68431"
-* As an example inference file contains P68431.png and target_protein set to "P68431" .
-Inference file can be downloadad here: [Inference File](https://drive.google.com/file/d/1_EBhvl1yWK8M1gdxbovRy-wpjSUOjHMQ/view?usp=drive_link).
-
-To find unique proteins to try. 
-
 -----------------------------------------------------------
 # Predicting Protein Subcellular Location
 
