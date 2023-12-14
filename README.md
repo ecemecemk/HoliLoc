@@ -107,6 +107,15 @@ To find unique proteins to try.
 -----------------------------------------------------------
 # Predicting Protein Subcellular Location
 
+## Dependencies
+
+Make sure you have the following dependencies installed before running the script:
+
+- [pandas](https://pandas.pydata.org/): `pip install pandas`
+- [scikit-learn](https://scikit-learn.org/): `pip install scikit-learn`
+- [OpenCV](https://opencv.org/): `pip install opencv-python`
+- [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow`
+
 Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1K5oxBk3G-G5hIoTBEDT-gVoUtVRSqQEG/view?usp=drive_link). All you need to add here is png file of protein of interest.
 
 To get the subcellular location prediction of protein of interest please run the command below.
