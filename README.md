@@ -47,17 +47,8 @@ Train and Test datasets have same structure composed of 35 columns. Funcionality
 
 * Cluster_ID --> UniRes Cluster ID of protein
 * UNIPROT --> Uniprot ID of protein
-* GENE --> HGNC Symbol of associated gene of protein 
-* GO_ID --> Cellular Component ID
 * CELLLINE --> Cellline information of protein
-* ORGANISIM --> Organism information of protein ( all is human)
 * IMAGE_URL --> URL of Confocal fluorescence microscopy image showing all channels (green: Target protein, blue: Nucleus, red: Microtubules, yellow: ER)
-* IMAGE_URL_R --> URL of Confocal fluorescence microscopy image showing red channel only
-* IMAGE_URL_G --> URL of Confocal fluorescence microscopy image showing green channel only
-* IMAGE_URL_B --> URL of Confocal fluorescence microscopy image showing blue channel only
-* IMAGE_URL_Y --> URL of Confocal fluorescence microscopy image showing yellow channel only
-* B --> UniProt IDs of proteins interation with protein. (comma separeted if multiple)
-* sequence_embedding --> 1024 sized amino-acid sequence embeddings obtained with ProtT5
 * Actin_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
 * Aggresome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
 * Cell_junctions --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
