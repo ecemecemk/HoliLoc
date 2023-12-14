@@ -84,10 +84,6 @@ All of them supplied as zip file containing files for train and test separetely 
 
 
 
-## Predicting Protein Subcellular Localization Using Pre-trained Models
-
-* Pre-trained HoliLoc models are available here: [HoliLoc Multi-Location Models](https://drive.google.com/file/d/1WjM7x-tlOxJfUIyGsTRhbS6FOpjIrv4Z/view?usp=drive_link).
-* If you want to get binary HoliLoc models for each subcellular localization HoliLoc models are available here: [HoliLoc Single-Location Models](https://drive.google.com/file/d/1O99X19bUd82exS2aby_bpKDttS5qQnri/view?usp=drive_link)
 
 
 # How to Predict Protein Subcellular Localization of New Protein
@@ -131,3 +127,8 @@ Change the indicated arguments for your task.
 *--holiloc_model_path: Path of HoliLoc model h5 file which is inside the downloaded file.
 *--sequence_embeddings_path: Path of sequence_embeddings_all_proteins.h5 file which is inside the downloaded file.
 *--ppi_embeddings_path: Path of human_ppı_embeddings_all_proteins.csv file which is inside the downloaded file.
+
+-------------------------------------------------------------------
+# Training and Evaluating Models
+
+If you want to reproduce HoliLoc model training please download necessery protein information, image feature vector, sequence and PPI embeddign files from here
