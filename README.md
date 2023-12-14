@@ -1,6 +1,30 @@
 # HoliLoc
 Understanding protein subcellular locations is crucial in systems biology, drug development, and proteomics. Of the 20,394 human proteins, only 7,348 have experimentally verified localization annotations (UniProt, 2020_05). Leveraging AI and diverse data is essential. HoliLoc integrates amino acid sequences, interactome data, and protein-protein interactions for human proteins. Our deep learning model covers 22 locations in a multi-class, multi-label approach. Utilize HoliLoc for holistic protein subcellular localization insights.
 
+Subcellular locations that HoliLoc covers are:
+1- Actin Filaments
+2- Aggresome
+3- Cell Junctions
+4- Microtubule Organizing Center (MTOC)
+5- Centrosome
+6- Cytoplasmic Bodies
+7- Cytosol
+8- Endoplasmic Reticulum (ER)
+9- Focal Adhesion Sites
+10- Golgi Apparatus
+11- Intermediate Filaments
+12- Microtubules
+13- Mitotic Spindle
+14- Nuclear Bodies
+15- Nuclear Membrane
+16- Nuclear Speckles
+17- Nucleoli
+18- Nucleoli Fibrillar Center
+19- Plasma Membrane (PM)
+20- Nucleoplasm
+21- Mitochondria
+22- Cytokinetic Bridge
+
 
 <img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
 
@@ -43,34 +67,12 @@ HoliLoc Model leverages joint fusion, combining feature representations from int
 * Train dataset of the HoliLoc can be obtained here: [HoliLoc Train Dataset](https://drive.google.com/file/d/1GYRaLahUbSjXuyHJSdqpa043D5ZPRUXC/view?usp=drive_link)
 * Test dataset of the HoliLoc can be obtained here: [HoliLoc Test Dataset](https://drive.google.com/file/d/1mvobd_R86PSKYEpcN4cCp-fvm91RcyYW/view?usp=drive_link)
 
-Train and Test datasets have same structure composed of 35 columns. Funcionality and meaning of each column as follows:
+Train and Test datasets have same structure composed of 26 columns. 22 of them are for one hot encoded location information (1: exist 0: does not exist) for subcellular location specified in column name. Other columns'descriptions are as follows:
 
 * Cluster_ID --> UniRes Cluster ID of protein
 * UNIPROT --> Uniprot ID of protein
 * CELLLINE --> Cellline information of protein
 * IMAGE_URL --> URL of Confocal fluorescence microscopy image showing all channels (green: Target protein, blue: Nucleus, red: Microtubules, yellow: ER)
-* Actin_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Aggresome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Cell_junctions --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* MTOC --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Centrosome --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Cytoplasmic_bodies --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Cytosol --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* ER --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Focal_adhesion_sites --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Golgi_apparatus --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Intermediate_filaments --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Microtubules --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Mitotic_spindle --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Nuclear_bodies --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Nuclear_membrane --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Nuclear_speckles --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Nucleoli --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Nucleoli_fibrillar_center --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* PM --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Nucleoplasm --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Mitochondria --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
-* Cytokinetic_bridge --> One hot encoded location information (1: exist 0: does not exist) for location name specified in column name
 
 ## HoliLoc Feature Vectors and Embeddings
 
