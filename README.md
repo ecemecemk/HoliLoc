@@ -116,6 +116,8 @@ python protein_location_predictor.py --target_protein P68431 --image_path path/t
 -------------------------------------------------------------------
 # Training and Evaluating Models   
 
+## Train
+
 * If you want to reproduce HoliLoc model training please download necessery protein information, image feature vector, sequence and PPI embeddign files from [here](https://drive.google.com/file/d/18_aUNxEcisyKatjuV-74zr4PXy7gh9bB/view?usp=drive_link).
   
 * Open terminal and navigate to the directory where your script (HoliLoc_Train_Reproduce.py) is located and run the command below by changing the arguments according to your system.
@@ -133,8 +135,9 @@ python your_script_name.py --train_data path/to/HoliLoc_Train_Target.csv --img_f
 * --ppi_embeddings_path: Path of sequence embeddings file file which is inside the downloaded file with name PPI_Embeddings_Train.npy.
 * --output_model: Name of the output HoliLoc model e.g. holiloc_model_repro.h5.
 
+## Evaluate
 
-* I f you want to evaluate HoliLoc model with HoliLoc test dateset, 
+* If you want to evaluate HoliLoc model with HoliLoc test dateset, 
 
 
 -------------------------------------------------------------------------------------
