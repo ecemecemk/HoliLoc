@@ -125,6 +125,13 @@ python HoliLoc_Test.py --model_path path/to/model.h5 --test_data path/to/test_da
 * --sequence_embeddings: Path of sequence embeddings file file which is inside the downloaded file with name Sequence_Embeddings_Test.npy.
 * --ppi_embeddings: Path of sequence embeddings file file which is inside the downloaded file with name PPI_Embeddings_Test.npy.
 
+-----------------------------------------------------------------------------------
+# Pre-Trained Models
+All HoliLoc and feature based( image,sequence,PPI) pre-trained model files can be obtained from here. [here](https://drive.google.com/file/d/17ugk4hviej1UFy2gKWChBP13A0Elwvk3/view?usp=drive_link).
+Also, for each subcellular location HoliLoc and individual feature based models trained. Single location pre-trained models can be obtained [here](https://drive.google.com/file/d/1O99X19bUd82exS2aby_bpKDttS5qQnri/view?usp=drive_link).
+
+
+
 -------------------------------------------------------------------------------------
 # License
 Copyright (C) 2023 HUBioDataLab
