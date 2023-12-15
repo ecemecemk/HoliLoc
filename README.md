@@ -28,23 +28,20 @@ Subcellular locations that HoliLoc covers are:
 <img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
 
 
-## Classification Models 
+# Model Structure
 
   HoliLoc enhances protein subcellular localization (SL) prediction through diverse data modalities: image, sequence, and interactome-protein-protein interaction (PPI). Our deep learning models, implemented in TensorFlow with Keras, ensure comprehensive insights into SL.
   
-### Image Model
+## Image Model
 
 The Image Model employs a 20-layer CNN for image classification. It includes convolutional, pooling, dropout, flatten, and dense layers. Convolutional layers use filter sizes (16, 32, 64) with a (5, 5) kernel and ReLU activation. MaxPooling2D layers down-sample with a (2, 2) pool size. Dropout layers (0.3, 0.5 rates) aid regularization. Dense layers (128, 64 units) with ReLU activation follow, each with dropout layers (0.3) for abstraction recognition. The output layer (22 units) with sigmoid activation suits multi-label classification for protein location. Designed for (224, 224, 3) input data, the model is compiled with Adam optimizer and binary cross-entropy loss. For the detailed model structure: [HoliLoc Image Model Structure](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_image.svg).
 
-
-
-
-### Sequence Model
+## Sequence Model
 
 The Sequence Model processes protein sequence embeddings through a FFN model with 16 layers. It includes dense, batch normalization, ReLU activation, and dropout layers, tailored for optimal classification performance. Batch normalization enhances stability, ReLU introduces non-linearity, and dropout combats overfitting. The output layer (22 units) with sigmoid activation is designed for sequence classification. The model, tailored for (1024,) input shape, is compiled using the Adam optimizer and binary cross-entropy loss.For the detailed model structure: [HoliLoc Sequence Model Structure](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_sequence.svg).
 
 
-### Interactome Model (PPI)
+## Interactome Model (PPI)
 
 PPI model composed of 20 layers. The model includes dense layers 
 with varying units (128, 64, 64, 32, 32), batch normalization layers, activation layers 
@@ -56,39 +53,16 @@ The architecture is designed for input data with dimensions (224,). Model is
 compiled using the Adam optimizer with a binary cross-entropy loss. For the detailed model structure: [HoliLoc PPI Model Structure](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_PPI.svg).
 
 
-
-### Model Fusion (HoliLoc)
+## Model Fusion (HoliLoc)
 
 HoliLoc Model leverages joint fusion, combining feature representations from intermediate layers of neural networks with data from three modalities—image, sequence, and interactome. This fusion creates a potent multi-modal neural network. The feature vector undergoes a FFN with 17 layers, including 6 dense layers, batch normalization, activation, and dropout layers. The output layer, using sigmoid activation, enables multi-label classification with 22 classes. Compiled with the Adam optimizer and binary cross-entropy loss, the model has a total of 4,663,606 parameters, with 4,654,390 trainable and an additional 9,216 non-trainable. For the detailed model structure: [HoliLoc Model Structure](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_fused.svg).
 
-
-## HoliLoc Datasets
-* Train dataset of the HoliLoc can be obtained here: [HoliLoc Train Dataset](https://drive.google.com/file/d/1GYRaLahUbSjXuyHJSdqpa043D5ZPRUXC/view?usp=drive_link)
-* Test dataset of the HoliLoc can be obtained here: [HoliLoc Test Dataset](https://drive.google.com/file/d/1mvobd_R86PSKYEpcN4cCp-fvm91RcyYW/view?usp=drive_link)
-
-Train and Test datasets have same structure composed of 26 columns. 22 of them are for one hot encoded location information (1: exist 0: does not exist) for subcellular location specified in column name. Other columns'descriptions are as follows:
-
-* Cluster_ID --> UniRes Cluster ID of protein
-* UNIPROT --> Uniprot ID of protein
-* CELLLINE --> Cellline information of protein
-* IMAGE_URL --> URL of Confocal fluorescence microscopy image showing all channels (green: Target protein, blue: Nucleus, red: Microtubules, yellow: ER)
-
-## HoliLoc Feature Vectors and Embeddings
-
-The resources to access the pre-generated feature vectors and embeddings from the training and test datasets of HoliLoc are as follows:
-
-All of them supplied as zip file containing files for train and test separetely and in numpy array format.
-
-* Image feature vectors resized to 224x224 pixels and normalized by dividing to 255: [Image Feature Vectors](https://drive.google.com/file/d/1cRPBHait35_IxuiNX9JEHwH_nt4ayv1r/view?usp=drive_link)
-* Sequence embeddings produced with ProtT5, which are also found on train and test dataset sequence_embedding column provided as numpy array for the ease of user : [Sequence Embeddings](https://drive.google.com/file/d/17tiLTWf-_W8VumSn7W9T7u1Hawy5OZyP/view?usp=drive_link)
-* PPI embedings obtained with graph learning and Node2Vec algorithm can be found here as numpy array for train and test separetely also: [PPI Embeddings](https://drive.google.com/file/d/15er4HxVvicOnAlr8IzRxxGdVEFURQ2bi/view?usp=drive_link)
-
-
-
 -----------------------------------------------------------
+
 # Predicting Protein Subcellular Location
 
 Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1K5oxBk3G-G5hIoTBEDT-gVoUtVRSqQEG/view?usp=drive_link). All you need to add here is png file of protein of interest.
+
 ## Dependencies
 
 Make sure you have the following dependencies installed before running the script:
