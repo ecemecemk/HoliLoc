@@ -99,7 +99,7 @@ Make sure you have the following dependencies installed before running the scrip
 - [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow`
 
 
-* To get the subcellular location prediction of protein of interest please open terminal and navigate to the directory where your script is located and run the command below by changing the arguments according to your system.
+* To get the subcellular location prediction of protein of interest please open terminal and navigate to the directory where your script (protein_subcellular_location_predictor.py) is located and run the command below by changing the arguments according to your system.
 
 ```
 python protein_location_predictor.py --target_protein P68431 --image_path path/to/your/image.png --holiloc_model_path path/to/your/HoliLoc_model.h5 --sequence_embeddings_path path/to/your/sequence_embeddings_all_proteins.h5 --ppi_embeddings_path path/to/your/human_ppı_embeddings_all_proteins.csv
@@ -118,7 +118,7 @@ python protein_location_predictor.py --target_protein P68431 --image_path path/t
 
 * If you want to reproduce HoliLoc model training please download necessery protein information, image feature vector, sequence and PPI embeddign files from [here](https://drive.google.com/file/d/18_aUNxEcisyKatjuV-74zr4PXy7gh9bB/view?usp=drive_link).
   
-* Open terminal and navigate to the directory where your script is located and run the command below by changing the arguments according to your system.
+* Open terminal and navigate to the directory where your script (HoliLoc_Train_Reproduce.py) is located and run the command below by changing the arguments according to your system.
   
 ```
 python your_script_name.py --train_data path/to/HoliLoc_Train_Target.csv --img_feature_vectors path/to/Image_Feature_Vectors_Train.npy --sequence_embeddings path/to/Sequence_Embeddings_Train.npy --ppi_embeddings path/to/PPI_Embeddings_Train.npy --output_model holiloc_model.h5
