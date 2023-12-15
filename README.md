@@ -122,7 +122,6 @@ python protein_location_predictor.py --target_protein P68431 --image_path path/t
 ```
 python your_script_name.py --train_data path/to/HoliLoc_Train_Target.csv --img_feature_vectors path/to/Image_Feature_Vectors_Train.npy --sequence_embeddings path/to/Sequence_Embeddings_Train.npy --ppi_embeddings path/to/PPI_Embeddings_Train.npy --output_model holiloc_model.h5
 ```
- python HoliLoc_Train_Reproduce.py --train_data "C:\Users\ECEM\Desktop\User_Test\HoliLoc_Train_Target.csv" --img_feature_vectors "C:\Users\ECEM\Desktop\User_Test\Image_Feature_Vectors_Train.npy" --sequence_embeddings "C:\Users\ECEM\Desktop\User_Test\Sequence_Embeddings_Train.npy" --ppi_embeddings "C:\Users\ECEM\Desktop\User_Test\PPI_Embeddings_Train.npy" --output_model holiloc_model_repro.h5
 
 * Change the indicated arguments for your task.
 
