@@ -107,27 +107,27 @@ python protein_location_predictor.py --target_protein P68431 --image_path path/t
 
 * Change the indicated arguments for your task.
 
-*--target_protein: UniProt ID of target protein.
-*--image_path: Path of png file of protein confocal microscopy image.
-*--holiloc_model_path: Path of HoliLoc model h5 file which is inside the downloaded file.
-*--sequence_embeddings_path: Path of sequence_embeddings_all_proteins.h5 file which is inside the downloaded file.
-*--ppi_embeddings_path: Path of human_ppı_embeddings_all_proteins.csv file which is inside the downloaded file.
+* --target_protein: UniProt ID of target protein.
+* --image_path: Path of png file of protein confocal microscopy image.
+* --holiloc_model_path: Path of HoliLoc model h5 file which is inside the downloaded file.
+* --sequence_embeddings_path: Path of sequence_embeddings_all_proteins.h5 file which is inside the downloaded file.
+* --ppi_embeddings_path: Path of human_ppı_embeddings_all_proteins.csv file which is inside the downloaded file.
 
 -------------------------------------------------------------------
 # Training and Evaluating Models
 
 * If you want to reproduce HoliLoc model training please download necessery protein information, image feature vector, sequence and PPI embeddign files from here.
 * Open terminal and navigate to the directory where your script is located and run the command below by changing the arguments according to your system.
-* 
+  
 ```
 python your_script_name.py --train_data path/to/HoliLoc_Train_Target.csv --img_feature_vectors path/to/Image_Feature_Vectors_Train.npy --sequence_embeddings path/to/Sequence_Embeddings_Train.npy --ppi_embeddings path/to/PPI_Embeddings_Train.npy --output_model holiloc_model.h5
 ```
 
 * Change the indicated arguments for your task.
 
-*--your_script_name.py: HoliLoc_Train_Reproduce.py
-*--train_data: Path of protein information file which is inside the downloaded file with name HoliLoc_Train_Target.csv.
-*--img_feature_vectors: Path of image feature vectors file which is inside the downloaded file with name Image_Feature_Vectors_Train.npy.
-*--sequence_embeddings_path: Path of sequence embeddings file file which is inside the downloaded file with name Sequence_Embeddings_Train.npy.
-*--ppi_embeddings_path: Path of sequence embeddings file file which is inside the downloaded file with name PPI_Embeddings_Train.npy.
-*--output_model: Name of the output HoliLoc model e.g. holiloc_model_repro.h5.
+* --your_script_name.py: HoliLoc_Train_Reproduce.py
+* --train_data: Path of protein information file which is inside the downloaded file with name HoliLoc_Train_Target.csv.
+* --img_feature_vectors: Path of image feature vectors file which is inside the downloaded file with name Image_Feature_Vectors_Train.npy.
+* --sequence_embeddings_path: Path of sequence embeddings file file which is inside the downloaded file with name Sequence_Embeddings_Train.npy.
+* --ppi_embeddings_path: Path of sequence embeddings file file which is inside the downloaded file with name PPI_Embeddings_Train.npy.
+* --output_model: Name of the output HoliLoc model e.g. holiloc_model_repro.h5.
