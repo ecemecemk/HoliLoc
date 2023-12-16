@@ -142,13 +142,32 @@ C:\Users\ECEM\Desktop\User_Test> python HoliLoc_Test.py --model_path  path/to/Ho
 
 ### Image
 
+* To get the subcellular location prediction of protein of interest with image feature based model please open terminal and navigate to the directory where your script (image_based_predictor.py) is located and run the command below by changing the arguments according to your system.
+
+```
+
+```
+
+
 ### Sequence
+
+* To get the subcellular location prediction of protein of interest with sequence feature based model please open terminal and navigate to the directory where your script (sequence_based_predictor.py) is located and run the command below by changing the arguments according to your system.
+
+```
+
+```
+
+
 
 ### PPI
 -----------------------------------------------------------------------------------
 
 
+* To get the subcellular location prediction of protein of interest with PPI feature based model please open terminal and navigate to the directory where your script (PPI_based_predictor.py) is located and run the command below by changing the arguments according to your system.
 
+```
+
+```
 
 
 -------------------------------------------------------------------------------------
