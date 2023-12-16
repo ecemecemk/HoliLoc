@@ -136,9 +136,15 @@ C:\Users\ECEM\Desktop\User_Test> python HoliLoc_Test.py --model_path  path/to/Ho
 
 -----------------------------------------------------------------------------------
 
-# Using Feature Based Models
+## Using Feature Based Models
 
-* Since HoliLoc fuses feature-based models, including image, sequence, and protein-protein interaction (PPI) data, you have the flexibility to choose and incorporate any of these feature-based models based on your specific requirements. 
+* Since HoliLoc fuses feature-based models, including image, sequence, and protein-protein interaction (PPI), you have the flexibility to choose and incorporate any of these feature-based models based on your specific requirements.
+
+### Image
+
+### Sequence
+
+### PPI
 -----------------------------------------------------------------------------------
 
 
