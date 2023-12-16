@@ -114,9 +114,12 @@ python HoliLoc_Train_Reproduce.py --train_data path/to/HoliLoc_Train_Target.csv 
 * If you want to evaluate HoliLoc model with HoliLoc test dateset necessary files are available for download [here](https://drive.google.com/file/d/1zcflN2qZNghK-gOrZ1EnhqesrSTtJ6tj/view?usp=drive_link).
 
 * Open terminal and navigate to the directory where your script (HoliLoc_Test.py) is located and run the command below by changing the arguments according to your system.
+
+
 ```
-python HoliLoc_Test.py --model_path path/to/model.h5 --test_data path/to/test_data.csv --img_feature_vectors path/to/image_feature_vectors.npy --sequence_embeddings path/to/sequence_embeddings.npy --ppi_embeddings path/to/ppi_embeddings.npy
+C:\Users\ECEM\Desktop\User_Test> python HoliLoc_Test.py --model_path  path/to/HoliLoc.h5 --test_data path/to/HoliLoc_Test_Target.csv --img_feature_vectors path/to/Image_Feature_Vectors_Test.npy --sequence_embeddings path/to/Sequence_Embeddings_Test.npy --ppi_embeddings path/to/PPI_Embeddings_Test.npy
 ```
+
 * Change the indicated arguments for your task.
 
 * --model_path: Path of HoliLoc model h5 file.
