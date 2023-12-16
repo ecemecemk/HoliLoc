@@ -57,11 +57,17 @@ compiled using the Adam optimizer with a binary cross-entropy loss. For the deta
 
 HoliLoc Model leverages joint fusion, combining feature representations from intermediate layers of neural networks with data from three modalities—image, sequence, and interactome. This fusion creates a potent multi-modal neural network. The feature vector undergoes a FFN with 17 layers, including 6 dense layers, batch normalization, activation, and dropout layers. The output layer, using sigmoid activation, enables multi-label classification with 22 classes. Compiled with the Adam optimizer and binary cross-entropy loss, the model has a total of 4,663,606 parameters, with 4,654,390 trainable and an additional 9,216 non-trainable. For the detailed model structure: [HoliLoc Model Structure](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_fused.svg).
 
+## Pre-Trained Models
+All HoliLoc and feature based( image,sequence,PPI) pre-trained model files can be obtained from here. [here](https://drive.google.com/file/d/17ugk4hviej1UFy2gKWChBP13A0Elwvk3/view?usp=drive_link).
+Also, for each subcellular location HoliLoc and individual feature based models trained. Single location pre-trained models can be obtained [here](https://drive.google.com/file/d/1O99X19bUd82exS2aby_bpKDttS5qQnri/view?usp=drive_link).
+
 -----------------------------------------------------------
 
 # Predicting Protein Subcellular Location
 
-Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1K5oxBk3G-G5hIoTBEDT-gVoUtVRSqQEG/view?usp=drive_link). All you need to add here is png file of protein of interest.
+* You can predict the subcellular location of your protein of interest by simply providing a confocal microscopy image and UniProt ID. 
+
+* Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1K5oxBk3G-G5hIoTBEDT-gVoUtVRSqQEG/view?usp=drive_link). All you need to add here is png file of protein of interest.
 
 ## Dependencies
 
@@ -129,9 +135,12 @@ C:\Users\ECEM\Desktop\User_Test> python HoliLoc_Test.py --model_path  path/to/Ho
 * --ppi_embeddings: Path of sequence embeddings file file which is inside the downloaded file with name PPI_Embeddings_Test.npy.
 
 -----------------------------------------------------------------------------------
-# Pre-Trained Models
-All HoliLoc and feature based( image,sequence,PPI) pre-trained model files can be obtained from here. [here](https://drive.google.com/file/d/17ugk4hviej1UFy2gKWChBP13A0Elwvk3/view?usp=drive_link).
-Also, for each subcellular location HoliLoc and individual feature based models trained. Single location pre-trained models can be obtained [here](https://drive.google.com/file/d/1O99X19bUd82exS2aby_bpKDttS5qQnri/view?usp=drive_link).
+
+# Using Feature Based Models
+
+-----------------------------------------------------------------------------------
+
+
 
 
 
