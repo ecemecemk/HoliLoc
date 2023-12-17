@@ -67,7 +67,7 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 
 * You can predict the subcellular location of your protein of interest by simply providing a confocal microscopy image and UniProt ID. 
 
-* Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1K5oxBk3G-G5hIoTBEDT-gVoUtVRSqQEG/view?usp=drive_link). All you need to add here is png file of protein of interest.
+* Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1Hyvk7riAWNdnFhrIG6kD6GePysRIa2-_/view?usp=drive_link). All you need to add here is png file of protein of interest.
 
 ## Dependencies
 
@@ -147,7 +147,10 @@ C:\Users\ECEM\Desktop\User_Test> python HoliLoc_Test.py --model_path  path/to/Ho
 ```
 python image_based_predictor.py --image_path  path/to/P68431.png --image_model_path path/to/Image_multilocation.h5
 ```
-
+* Change the indicated arguments for your task.
+  
+* --image_path: Path of png file of protein confocal microscopy image.
+* --image_model_path: Path of image model h5 file which is inside the downloaded file.
 
 ### Sequence
 
