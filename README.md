@@ -1,5 +1,5 @@
 # HoliLoc
-Understanding protein subcellular locations is crucial in systems biology, drug development, and proteomics. Of the 20,394 human proteins, only 7,348 have experimentally verified localization annotations (UniProt, 2020_05). Leveraging AI and diverse data is essential. HoliLoc integrates amino acid sequences, interactome data, and protein-protein interactions for human proteins. HoliLoc covers 22 locations in a multi-class, multi-label approach and can be utilize for holistic protein subcellular localization insights.
+Understanding protein subcellular locations is crucial in systems biology, drug development, and proteomics. Of the 20,394 human proteins, only 7,348 have experimentally verified localization annotations (UniProt, 2020_05). Leveraging AI and diverse data is essential. HoliLoc integrates amino acid sequences, interactome data, and protein-protein interactions for human proteins. HoliLoc covers 22 locations in multi-label approach and can be utilize for holistic protein subcellular localization insights.
 
 Subcellular locations that HoliLoc covers:
 1. Actin Filaments
