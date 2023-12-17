@@ -3,7 +3,6 @@ Knowledge of subcellular localization (SL) of proteins is essential for drug dev
 
 <img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
 
-
 # Model Structure
 
   HoliLoc enhances protein subcellular localization (SL) prediction through diverse data modalities: image, sequence, and interactome-protein-protein interaction (PPI). Our deep learning models, implemented in TensorFlow with Keras, ensure comprehensive insights into SL.
@@ -33,6 +32,16 @@ compiled using the Adam optimizer with a binary cross-entropy loss. For the deta
 
 HoliLoc Model leverages joint fusion, combining feature representations from intermediate layers of neural networks with data from three modalities—image, sequence, and interactome. This fusion creates a potent multi-modal neural network. The feature vector undergoes a FFN with 17 layers, including 6 dense layers, batch normalization, activation, and dropout layers. The output layer, using sigmoid activation, enables multi-label classification with 22 classes. Compiled with the Adam optimizer and binary cross-entropy loss, the model has a total of 4,663,606 parameters, with 4,654,390 trainable and an additional 9,216 non-trainable. For the detailed model structure: [HoliLoc Model Structure](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_fused.svg).
 
+## Dependencies
+
+Make sure you have the following dependencies installed before running the scripts:
+
+- [pandas](https://pandas.pydata.org/): `pip install pandas`
+- [scikit-learn](https://scikit-learn.org/): `pip install scikit-learn`
+- [OpenCV](https://opencv.org/): `pip install opencv-python`
+- [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow`
+
+
 ## Pre-Trained Models
 All HoliLoc and feature based( image,sequence,PPI) pre-trained model files can be obtained from here. [here](https://drive.google.com/file/d/17ugk4hviej1UFy2gKWChBP13A0Elwvk3/view?usp=drive_link).
 Also, for each subcellular location HoliLoc and individual feature based models trained. Single location pre-trained models can be obtained [here](https://drive.google.com/file/d/1O99X19bUd82exS2aby_bpKDttS5qQnri/view?usp=drive_link).
@@ -45,14 +54,6 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 
 * Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1Hyvk7riAWNdnFhrIG6kD6GePysRIa2-_/view?usp=drive_link). All you need to add here is png file of protein of interest.
 
-## Dependencies
-
-Make sure you have the following dependencies installed before running the script:
-
-- [pandas](https://pandas.pydata.org/): `pip install pandas`
-- [scikit-learn](https://scikit-learn.org/): `pip install scikit-learn`
-- [OpenCV](https://opencv.org/): `pip install opencv-python`
-- [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow`
 
 
 * To get the subcellular location prediction of protein of interest please open terminal and navigate to the directory where your script (protein_subcellular_location_predictor.py) is located and run the command below by changing the arguments according to your system.
