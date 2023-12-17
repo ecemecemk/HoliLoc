@@ -48,7 +48,7 @@ with varying units (128, 64, 64, 32, 32), batch normalization layers, activation
 with ReLU, and dropout layers with different dropout rates (0.4, 0.5, 0.1, 0.1, 0.1). 
 Each of these layers collectively enables the model to understand complicated 
 patterns within protein interactions. The final dense layer, comprising 22 units with a 
-sigmoid activation, serves as the output layer for our classification task (Figure 3.12). 
+sigmoid activation, serves as the output layer for our classification task. 
 The architecture is designed for input data with dimensions (224,). Model is 
 compiled using the Adam optimizer with a binary cross-entropy loss. For the detailed model structure: [HoliLoc PPI Model Structure](https://github.com/ecemecemk/HoliLoc/blob/main/holiloc_PPI.svg).
 
