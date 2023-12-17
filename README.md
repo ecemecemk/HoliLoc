@@ -152,12 +152,13 @@ python image_based_predictor.py --image_path  path/to/P68431.png --image_model_p
 ### Sequence
 
 * To get the subcellular location prediction of protein of interest with sequence feature based model please open terminal and navigate to the directory where your script (sequence_based_predictor.py) is located and run the command below by changing the arguments according to your system.
-
+  
+* Please download sequence embeddings file to your directory from [here](https://drive.google.com/file/d/1uukYfXWQ2YZiaIfUilG-fLsn4MsYzvQN/view?usp=drive_link).
+* Sequence feature based model file can be obtained as described in the Pre-Trained Models section.
+  
 ```
 python sequence_based_predictor.py --target_protein P68431 --sequence_model_path  path/to/sequence_multilocation.h5 --sequence_embeddings_path  path/to/sequence_embeddings_all_proteins.h5
 ```
-
-
 
 ### PPI
 -----------------------------------------------------------------------------------
