@@ -41,6 +41,9 @@ Make sure you have the following dependencies installed before running the scrip
 - [OpenCV](https://opencv.org/): `pip install opencv-python`
 - [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow`
 
+## Image Dependencies
+Protein confocal microscopy images need to be acquired in the following manner. The cells should be fixed in 4% formaldehyde and permeabilized with Triton X-100. The antibody for the target protein is combined with marker antibodies targeting gamma tubulin (to show microtubules) and calreticulin (to show the endoplasmic reticulum or ER), respectively. The nucleus is counterstained with 4',6-diamidino-2-phenylindole (DAPI). The primary antibodies are detected with the help of species-specific secondary antibodies labeled with different fluorophores (Alexa Fluor 488 for the protein of interest, Alexa Fluor 555 for microtubules, and Alexa Fluor 647 for ER). The cells are imaged using a laser scanning confocal microscope with a 63X objective. The different fluorophores are displayed as different channels in multicolor images, with the protein of interest shown in green, the nucleus in blue, microtubules in red, and the ER in yellow.
+
 
 ## Pre-Trained Models
 All HoliLoc and feature based( image,sequence,PPI) pre-trained model files can be obtained from here. [here](https://drive.google.com/file/d/17ugk4hviej1UFy2gKWChBP13A0Elwvk3/view?usp=drive_link).
