@@ -170,7 +170,6 @@ python sequence_based_predictor.py --target_protein P68431 --sequence_model_path
 
 ```
 python PPI_based_predictor.py --target_protein P68431 --PPI_model_path path/to/PPI_multilocation.h5 --PPI_embeddings_path path/to/human_ppi_embeddings_all_proteins.csv
-
 ```
 
 
