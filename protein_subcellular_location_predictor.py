@@ -16,7 +16,7 @@ def predict_protein_location(target_protein, image_path, holiloc_model_path, seq
                    "Nuclear_speckles", "Nucleoli", "Nucleoli_fibrillar_center",
                    "PM", "Nucleoplasm", "Mitochondria", "Cytokinetic_bridge"]
 
-    # Load HoliLoc Models
+    # Load HoliLoc Model
 
     holiloc_model = load_model(holiloc_model_path)
     human_interactome = pd.read_csv(ppi_embeddings_path)
