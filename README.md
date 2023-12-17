@@ -88,7 +88,7 @@ python protein_subcellular_location_predictor.py --target_protein P68431 --image
 * Change the indicated arguments for your task.
 
 * --target_protein: UniProt ID of target protein.
-* --image_path: Path of png file of protein confocal microscopy image.
+* --image_path: Path of png or jpg file of protein confocal microscopy image.
 * --holiloc_model_path: Path of HoliLoc model h5 file which is inside the downloaded file.
 * --sequence_embeddings_path: Path of sequence_embeddings_all_proteins.h5 file which is inside the downloaded file.
 * --ppi_embeddings_path: Path of human_ppı_embeddings_all_proteins.csv file which is inside the downloaded file.
@@ -150,7 +150,7 @@ python image_based_predictor.py --image_path  path/to/P68431.png --image_model_p
 ```
 * Change the indicated arguments for your task.
   
-* --image_path: Path of png file of protein confocal microscopy image.
+* --image_path: Path of png or jpg file of protein confocal microscopy image.
 * --image_model_path: Path of image based model file Image_multilocation.h5.
 
 ### Sequence
