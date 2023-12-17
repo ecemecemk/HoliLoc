@@ -154,7 +154,7 @@ python image_based_predictor.py --image_path "P68431.png" --image_model_path "Im
 * To get the subcellular location prediction of protein of interest with sequence feature based model please open terminal and navigate to the directory where your script (sequence_based_predictor.py) is located and run the command below by changing the arguments according to your system.
 
 ```
-
+python sequence_based_predictor.py --target_protein "P68431" --sequence_model_path "sequence_multilocation.h5" --sequence_embeddings_path sequence_embeddings_all_proteins.h5
 ```
 
 
