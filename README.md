@@ -143,6 +143,7 @@ C:\Users\ECEM\Desktop\User_Test> python HoliLoc_Test.py --model_path  path/to/Ho
 ### Image
 
 * To get the subcellular location prediction of protein of interest with image feature based model please open terminal and navigate to the directory where your script (image_based_predictor.py) is located and run the command below by changing the arguments according to your system.
+* Image feature based model file can be obtained as described in the Pre-Trained Models section.
 
 ```
 python image_based_predictor.py --image_path  path/to/P68431.png --image_model_path path/to/Image_multilocation.h5
@@ -150,7 +151,7 @@ python image_based_predictor.py --image_path  path/to/P68431.png --image_model_p
 * Change the indicated arguments for your task.
   
 * --image_path: Path of png file of protein confocal microscopy image.
-* --image_model_path: Path of image model h5 file which is inside the downloaded file.
+* --image_model_path: Path of image based model file Image_multilocation.h5.
 
 ### Sequence
 
@@ -162,6 +163,13 @@ python image_based_predictor.py --image_path  path/to/P68431.png --image_model_p
 ```
 python sequence_based_predictor.py --target_protein P68431 --sequence_model_path  path/to/sequence_multilocation.h5 --sequence_embeddings_path  path/to/sequence_embeddings_all_proteins.h5
 ```
+
+* Change the indicated arguments for your task.
+  
+* --target_protein: UniProt ID of protein of interest.
+* --sequence_model_path: Path of sequence based model file sequence_multilocation.h5.
+* --sequence_embeddings_path: Path of sequence_embeddings_all_proteins.h5 file which is inside the downloaded file.
+  
 
 ### PPI
 -----------------------------------------------------------------------------------
@@ -175,6 +183,11 @@ python sequence_based_predictor.py --target_protein P68431 --sequence_model_path
 python PPI_based_predictor.py --target_protein P68431 --PPI_model_path path/to/PPI_multilocation.h5 --PPI_embeddings_path path/to/human_ppi_embeddings_all_proteins.csv
 ```
 
+* Change the indicated arguments for your task.
+
+* --target_protein: UniProt ID of target protein.
+* --PPI_model_path: Path of PPU based model file PPI_multilocation.h5.
+* --PPI_embeddings_path: Path of human_ppi_embeddings_all_proteins.csv file.
 
 -------------------------------------------------------------------------------------
 # License
