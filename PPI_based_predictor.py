@@ -14,7 +14,7 @@ def predict_protein_location(target_protein, PPI_model_path, PPI_embeddings_path
                    "Nuclear_speckles", "Nucleoli", "Nucleoli_fibrillar_center",
                    "PM", "Nucleoplasm", "Mitochondria", "Cytokinetic_bridge"]
 
-    # Load PPI Models
+    # Load PPI Model
 
     PPI_model = load_model(PPI_model_path)
     human_interactome = pd.read_csv(PPI_embeddings_path)
