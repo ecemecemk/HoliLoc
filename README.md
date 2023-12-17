@@ -103,7 +103,7 @@ python HoliLoc_Train_Reproduce.py --train_data path/to/HoliLoc_Train_Target.csv 
 
 
 ```
-C:\Users\ECEM\Desktop\User_Test> python HoliLoc_Test.py --model_path  path/to/HoliLoc.h5 --test_data path/to/HoliLoc_Test_Target.csv --img_feature_vectors path/to/Image_Feature_Vectors_Test.npy --sequence_embeddings path/to/Sequence_Embeddings_Test.npy --ppi_embeddings path/to/PPI_Embeddings_Test.npy
+python HoliLoc_Test.py --model_path  path/to/HoliLoc.h5 --test_data path/to/HoliLoc_Test_Target.csv --img_feature_vectors path/to/Image_Feature_Vectors_Test.npy --sequence_embeddings path/to/Sequence_Embeddings_Test.npy --ppi_embeddings path/to/PPI_Embeddings_Test.npy
 ```
 
 * Change the indicated arguments for your task.
