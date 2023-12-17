@@ -165,6 +165,8 @@ python sequence_based_predictor.py --target_protein P68431 --sequence_model_path
 
 
 * To get the subcellular location prediction of protein of interest with PPI feature based model please open terminal and navigate to the directory where your script (PPI_based_predictor.py) is located and run the command below by changing the arguments according to your system.
+* Please download PPI embeddings file to your directory from [here](https://drive.google.com/file/d/1GrovJYmq_uH4rzmexdV8ukCaOWQNbiwT/view?usp=drive_link).
+* PPI feature based model file can be obtained as described in the Pre-Trained Models section.
 
 ```
 python PPI_based_predictor.py --target_protein P68431 --PPI_model_path path/to/PPI_multilocation.h5 --PPI_embeddings_path path/to/human_ppi_embeddings_all_proteins.csv
