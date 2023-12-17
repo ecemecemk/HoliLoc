@@ -1,29 +1,5 @@
 # HoliLoc
-Understanding protein subcellular locations is crucial in systems biology, drug development, and proteomics. Of the 20,394 human proteins, only 7,348 have experimentally verified localization annotations (UniProt, 2020_05). Leveraging AI and diverse data is essential. HoliLoc integrates amino acid sequences, interactome data, and protein-protein interactions for human proteins. HoliLoc covers 22 locations in multi-label approach and can be utilize for holistic protein subcellular localization insights.
-
-Subcellular locations that HoliLoc covers:
-1. Actin Filaments
-2. Aggresome
-3. Cell Junctions
-4. Microtubule Organizing Center (MTOC)
-5. Centrosome
-6. Cytoplasmic Bodies
-7. Cytosol
-8. Endoplasmic Reticulum (ER)
-9. Focal Adhesion Sites
-10. Golgi Apparatus
-11. Intermediate Filaments
-12. Microtubules
-13. Mitotic Spindle
-14. Nuclear Bodies
-15. Nuclear Membrane
-16. Nuclear Speckles
-17. Nucleoli
-18. Nucleoli Fibrillar Center
-19. Plasma Membrane (PM)
-20. Nucleoplasm
-21. Mitochondria
-22. Cytokinetic Bridge
+Knowledge of subcellular localization (SL) of proteins is essential for drug development, systems biology, proteomics, and functional genomics. Due to the high costs associated with experimental studies, it has become crucial to develop computational systems to accurately predict proteins’ SLs. With different modes of biological data (e.g., sequences, biomedical images, unstructured text, etc.) becoming readily available to ordinary scientists, it is possible to leverage complementary types of data to increase both the performance and coverage of predictions. In this study, we propose HoliLoc, a new method for predicting protein SLs via multi-modal deep learning. Our approach makes use of three different types of data: 2D confocal microscopy images (Human Protein Atlas), amino acid sequences (UniProt), and protein-protein interactions - PPIs (IntAct) to predict SLs of proteins in a multi-label manner for 22 different cell compartments (Figure 1). HoliLoc takes protein data of 3 different modalities as input, encodes and embeds them (using ProtT5 language model for sequences and Node2Vec for PPIs), conducts learning separately on each data type (using a convolutional neural network - CNN for images and feed forward neural networks - FFN for the other two), and then concatenates these 3 embeddings and transform them to probabilities for 22 locations via another FFN. The system was trained in an end-to-end manner, and the performances were calculated on the unseen hold out test dataset which are significantly different from training samples (achieved by using UniRef50 clusters). The covered subcellular locations include Actin Filaments, Aggresome, Cell Junctions, Microtubule Organizing Center (MTOC), Centrosome, Cytoplasmic Bodies, Cytosol, Endoplasmic Reticulum (ER), Focal Adhesion Sites, Golgi Apparatus, Intermediate Filaments, Microtubules, Mitotic Spindle, Nuclear Bodies, Nuclear Membrane, Nuclear Speckles, Nucleoli, Nucleoli Fibrillar Center, Plasma Membrane (PM), Nucleoplasm, Mitochondria, and Cytokinetic Bridge. 
 
 <img width="944" alt="HoliLoc_Schema" src="https://github.com/ecemecemk/HoliLoc/assets/47942665/cb45cebb-acb6-433f-83fd-9a86c67627be">
 
