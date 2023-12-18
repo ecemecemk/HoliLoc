@@ -53,25 +53,25 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 
 # Predicting Protein Subcellular Location
 
-* You can predict the subcellular location of your protein of interest by simply providing a confocal microscopy image and UniProt ID. 
-
-* Fine-tuned HoliLoc Model and necessary embedding files of sequence and PPI are available for download [here](https://drive.google.com/file/d/1Hyvk7riAWNdnFhrIG6kD6GePysRIa2-_/view?usp=drive_link). All you need to add here is png file of protein of interest.
-
-
-
-* To get the subcellular location prediction of protein of interest please open terminal and navigate to the directory where your script (protein_subcellular_location_predictor.py) is located and run the command below by changing the arguments according to your system.
+* You can predict the subcellular location of your protein of interest by simply providing a confocal microscopy image and UniProt ID.
+* You can use any model you like, HoliLoc or feature based models (image, sequence or PPI).
+* Please download all necessary files from [here](https://drive.google.com/file/d/1PEnrMZsGI52zts6NF5EC-Nn5Nn2U0wNP/view?usp=drive_link). This file is consisting of embeddings, example image and multi-location models and protein_sl_predictor.py file. Unzip the file.
+* Open terminal and navigate to the downloaded file's directory where file is script protein_sl_predictor.py located as well.
+* Run the command below by specifying model type you want, image, sequence, PPI, or HoliLoc.
 
 ```
-python protein_subcellular_location_predictor.py --target_protein P68431 --image_path path/to/your/image.png --holiloc_model_path path/to/your/HoliLoc_model.h5 --sequence_embeddings_path path/to/your/sequence_embeddings_all_proteins.h5 --ppi_embeddings_path path/to/your/human_ppi_embeddings_all_proteins.csv
+python protein_sl_predictor.py --model_type ---
+
 ```
 
-* Change the indicated arguments for your task.
+* The script will prompt you for the following information:
+  
+* Enter the UniProt ID of the target protein: e.g., P68431.
+* Enter the path to the protein image: e.g., P68431.png.
+* Enter the path to the Holiloc model file: HoliLoc.h5
+* Enter the path to the sequence embeddings file: sequence_embeddings_all_proteins.h5
+* Enter the path to the PPI embeddings CSV file: human_ppi_embeddings_all_proteins.csv
 
-* --target_protein: UniProt ID of target protein.
-* --image_path: Path of png or jpg file of protein confocal microscopy image.
-* --holiloc_model_path: Path of HoliLoc model h5 file which is inside the downloaded file.
-* --sequence_embeddings_path: Path of sequence_embeddings_all_proteins.h5 file which is inside the downloaded file.
-* --ppi_embeddings_path: Path of human_ppı_embeddings_all_proteins.csv file which is inside the downloaded file.
 
 -------------------------------------------------------------------
 # Training and Evaluating Models   
@@ -114,60 +114,7 @@ python HoliLoc_Test.py --model_path  path/to/HoliLoc.h5 --test_data path/to/Holi
 * --sequence_embeddings: Path of sequence embeddings file file which is inside the downloaded file with name Sequence_Embeddings_Test.npy.
 * --ppi_embeddings: Path of sequence embeddings file file which is inside the downloaded file with name PPI_Embeddings_Test.npy.
 
------------------------------------------------------------------------------------
 
-## Using Feature Based Models
-
-* Since HoliLoc fuses feature-based models, including image, sequence, and protein-protein interaction (PPI), you have the flexibility to choose and incorporate any of these feature-based models based on your specific requirements.
-
-### Image
-
-* To get the subcellular location prediction of protein of interest with image feature based model please open terminal and navigate to the directory where your script (image_based_predictor.py) is located and run the command below by changing the arguments according to your system.
-* Image feature based model file can be obtained as described in the Pre-Trained Models section.
-
-```
-python image_based_predictor.py --image_path  path/to/P68431.png --image_model_path path/to/Image_multilocation.h5
-```
-* Change the indicated arguments for your task.
-  
-* --image_path: Path of png or jpg file of protein confocal microscopy image.
-* --image_model_path: Path of image based model file Image_multilocation.h5.
-
-### Sequence
-
-* To get the subcellular location prediction of protein of interest with sequence feature based model please open terminal and navigate to the directory where your script (sequence_based_predictor.py) is located and run the command below by changing the arguments according to your system.
-  
-* Please download sequence embeddings file to your directory from [here](https://drive.google.com/file/d/1uukYfXWQ2YZiaIfUilG-fLsn4MsYzvQN/view?usp=drive_link).
-* Sequence feature based model file can be obtained as described in the Pre-Trained Models section.
-  
-```
-python sequence_based_predictor.py --target_protein P68431 --sequence_model_path  path/to/sequence_multilocation.h5 --sequence_embeddings_path  path/to/sequence_embeddings_all_proteins.h5
-```
-
-* Change the indicated arguments for your task.
-  
-* --target_protein: UniProt ID of protein of interest.
-* --sequence_model_path: Path of sequence based model file sequence_multilocation.h5.
-* --sequence_embeddings_path: Path of sequence_embeddings_all_proteins.h5 file which is inside the downloaded file.
-  
-
-### PPI
------------------------------------------------------------------------------------
-
-
-* To get the subcellular location prediction of protein of interest with PPI feature based model please open terminal and navigate to the directory where your script (PPI_based_predictor.py) is located and run the command below by changing the arguments according to your system.
-* Please download PPI embeddings file to your directory from [here](https://drive.google.com/file/d/1GrovJYmq_uH4rzmexdV8ukCaOWQNbiwT/view?usp=drive_link).
-* PPI feature based model file can be obtained as described in the Pre-Trained Models section.
-
-```
-python PPI_based_predictor.py --target_protein P68431 --PPI_model_path path/to/PPI_multilocation.h5 --PPI_embeddings_path path/to/human_ppi_embeddings_all_proteins.csv
-```
-
-* Change the indicated arguments for your task.
-
-* --target_protein: UniProt ID of target protein.
-* --PPI_model_path: Path of PPU based model file PPI_multilocation.h5.
-* --PPI_embeddings_path: Path of human_ppi_embeddings_all_proteins.csv file.
 
 -------------------------------------------------------------------------------------
 # License
