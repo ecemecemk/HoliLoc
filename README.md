@@ -56,7 +56,7 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 * You can predict the subcellular location of your protein of interest by simply providing a confocal microscopy image and UniProt ID.
 * You can use any model you like, HoliLoc or feature based models (image, sequence or PPI).
 * Please download all necessary files from [here](https://drive.google.com/file/d/1PEnrMZsGI52zts6NF5EC-Nn5Nn2U0wNP/view?usp=drive_link). This file is consisting of embeddings, example image and multi-location models and protein_sl_predictor.py file. Unzip the file.
-* Open terminal and navigate to the downloaded file's directory where file is script protein_sl_predictor.py located as well.
+* Open terminal and navigate to the downloaded file's directory where protein_sl_predictor.py is located as well.
 * Run the command below by specifying model type you want, image, sequence, PPI, or HoliLoc.
 
 ```
@@ -78,41 +78,40 @@ python protein_sl_predictor.py --model_type image, sequence, PPI, or HoliLoc
 
 ## Train
 
-* If you want to reproduce HoliLoc model training please download necessery protein information, image feature vector, sequence and PPI embeddign files from [here](https://drive.google.com/file/d/18_aUNxEcisyKatjuV-74zr4PXy7gh9bB/view?usp=drive_link).
-  
-* Open terminal and navigate to the directory where your script (HoliLoc_Train_Reproduce.py) is located and run the command below by changing the arguments according to your system.
-  
+* If you want to reproduce HoliLoc model training please download necessery protein information, image feature vector, sequence and PPI embeddign files with HoliLoc_Train_Reproduce.py from [here](). Unzip the file.
+* Open terminal and navigate to the downloaded file's directory where  HoliLoc_Train_Reproduce.py is located as well.
+* Run the command below.
+
 ```
-python HoliLoc_Train_Reproduce.py --train_data path/to/HoliLoc_Train_Target.csv --img_feature_vectors path/to/Image_Feature_Vectors_Train.npy --sequence_embeddings path/to/Sequence_Embeddings_Train.npy --ppi_embeddings path/to/PPI_Embeddings_Train.npy --output_model holiloc_model.h5
+python HoliLoc_Train_Reproduce.py --train_data HoliLoc_Train_Target.csv --img_feature_vectors Image_Feature_Vectors_Train.npy --sequence_embeddings Sequence_Embeddings_Train.npy --ppi_embeddings PPI_Embeddings_Train.npy --output_model holiloc_model.h5
 ```
 
-* Change the indicated arguments for your task.
+* Provide the indicated arguments for your task.
 
-
-* --train_data: Path of protein information file which is inside the downloaded file with name HoliLoc_Train_Target.csv.
-* --img_feature_vectors: Path of image feature vectors file which is inside the downloaded file with name Image_Feature_Vectors_Train.npy.
-* --sequence_embeddings_path: Path of sequence embeddings file file which is inside the downloaded file with name Sequence_Embeddings_Train.npy.
-* --ppi_embeddings_path: Path of sequence embeddings file file which is inside the downloaded file with name PPI_Embeddings_Train.npy.
+* --train_data: Name of protein information file, HoliLoc_Train_Target.csv.
+* --img_feature_vectors: Name of image feature vectors file, Image_Feature_Vectors_Train.npy.
+* --sequence_embeddings_path: Name of sequence embeddings file, Sequence_Embeddings_Train.npy.
+* --ppi_embeddings_path: Name of PPI embeddings file, PPI_Embeddings_Train.npy.
 * --output_model: Name of the output HoliLoc model e.g. holiloc_model_repro.h5.
 
 ## Evaluate
 
-* If you want to evaluate HoliLoc model with HoliLoc test dateset necessary files are available for download [here](https://drive.google.com/file/d/1zcflN2qZNghK-gOrZ1EnhqesrSTtJ6tj/view?usp=drive_link).
-
-* Open terminal and navigate to the directory where your script (HoliLoc_Test.py) is located and run the command below by changing the arguments according to your system.
-
+* You can evaluate HoliLoc model with HoliLoc test dateset.
+* Please download all necessary files from [here](https://drive.google.com/file/d/1b_GMSERkRbRJB81USwV-mbAD1tuXvGpO/view?usp=drive_link). Unzip the file.
+* Open terminal and navigate to the downloaded file's directory where HoliLoc_Test.py is located as well.
+* Run the command below.
 
 ```
-python HoliLoc_Test.py --model_path  path/to/HoliLoc.h5 --test_data path/to/HoliLoc_Test_Target.csv --img_feature_vectors path/to/Image_Feature_Vectors_Test.npy --sequence_embeddings path/to/Sequence_Embeddings_Test.npy --ppi_embeddings path/to/PPI_Embeddings_Test.npy
+python HoliLoc_Test.py --model_path HoliLoc.h5 --test_data HoliLoc_Test_Target.csv --img_feature_vectors Image_Feature_Vectors_Test.npy --sequence_embeddings Sequence_Embeddings_Test.npy --ppi_embeddings PPI_Embeddings_Test.npy
 ```
 
-* Change the indicated arguments for your task.
+* Provide the indicated arguments for your task.
 
-* --model_path: Path of HoliLoc model h5 file.
-* --test_data: Path of protein information file which is inside the downloaded file with name HoliLoc_Test_Target.csv.
-* --img_feature_vectors: Path of image feature vectors file which is inside the downloaded file with name Image_Feature_Vectors_Test.npy.
-* --sequence_embeddings: Path of sequence embeddings file file which is inside the downloaded file with name Sequence_Embeddings_Test.npy.
-* --ppi_embeddings: Path of sequence embeddings file file which is inside the downloaded file with name PPI_Embeddings_Test.npy.
+* --model_path: Path of model h5 file e.g. HoliLoc.h5.
+* --test_data: Name HoliLoc_Test_Target.csv.
+* --img_feature_vectors: Name of image feature vectors file, Image_Feature_Vectors_Test.npy.
+* --sequence_embeddings: Name of sequence embeddings file, Sequence_Embeddings_Test.npy.
+* --ppi_embeddings: Name of PPI embeddings file, PPI_Embeddings_Test.npy.
 
 
 
