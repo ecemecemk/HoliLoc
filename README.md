@@ -60,7 +60,7 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 * Run the command below by specifying model type you want, image, sequence, PPI, or HoliLoc.
 
 ```
-python protein_sl_predictor.py --model_type ---
+python protein_sl_predictor.py --model_type 
 
 ```
 
