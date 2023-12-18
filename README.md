@@ -97,7 +97,7 @@ python HoliLoc_Train_Reproduce.py --train_data HoliLoc_Train_Target.csv --img_fe
 ## Evaluate
 
 * You can evaluate HoliLoc model with HoliLoc test dateset.
-* Please download all necessary files from [here](https://drive.google.com/file/d/1b_GMSERkRbRJB81USwV-mbAD1tuXvGpO/view?usp=drive_link). Unzip the file.
+* Please download all necessary files from [here](https://drive.google.com/file/d/1qUM7t9D9RXMGu2BaFS1_u00aLUbXHOr8/view?usp=drive_link). Unzip the file.
 * Open terminal and navigate to the downloaded file's directory where HoliLoc_Test.py is located as well.
 * Run the command below.
 
