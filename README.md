@@ -81,6 +81,7 @@ python protein_sl_predictor.py --model_type image, sequence, PPI, or HoliLoc
 * If you want to reproduce HoliLoc model training please download necessery protein information, image feature vector, sequence and PPI embeddign files with HoliLoc_Train_Reproduce.py from [here](https://drive.google.com/file/d/13qtm6UMBX6KOUZ6XJ9_h5mMNl5LmRwk5/view?usp=drive_link). Unzip the file.
 * Open terminal and navigate to the downloaded file's directory where  HoliLoc_Train_Reproduce.py is located as well.
 * Run the command below.
+* You will obtain the model file in the name you specifed in the "output_model" section as output.
 
 ```
 python HoliLoc_Train_Reproduce.py --train_data HoliLoc_Train_Target.csv --img_feature_vectors Image_Feature_Vectors_Train.npy --sequence_embeddings Sequence_Embeddings_Train.npy --ppi_embeddings PPI_Embeddings_Train.npy --output_model holiloc_model.h5
@@ -93,6 +94,8 @@ python HoliLoc_Train_Reproduce.py --train_data HoliLoc_Train_Target.csv --img_fe
 * --sequence_embeddings_path: Name of sequence embeddings file, Sequence_Embeddings_Train.npy.
 * --ppi_embeddings_path: Name of PPI embeddings file, PPI_Embeddings_Train.npy.
 * --output_model: Name of the output HoliLoc model e.g. holiloc_model_repro.h5.
+
+  
 
 ## Evaluate
 
