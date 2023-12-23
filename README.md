@@ -36,10 +36,10 @@ HoliLoc Model leverages joint fusion, combining feature representations from int
 
 Make sure you have the following dependencies installed before running the scripts:
 
-- [pandas](https://pandas.pydata.org/): `pip install pandas`
-- [scikit-learn](https://scikit-learn.org/): `pip install scikit-learn`
-- [OpenCV](https://opencv.org/): `pip install opencv-python`
-- [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow`
+- [pandas](https://pandas.pydata.org/): `pip install pandas` Version: 2.1.4
+- [scikit-learn](https://scikit-learn.org/): `pip install scikit-learn` Version: 1.3.2
+- [OpenCV](https://opencv.org/): `pip install opencv-python` Version: 4.8.1.78
+- [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow` Version: 2.15.0
 
 ## Image Dependencies
 Protein confocal microscopy images need to be acquired in the following manner. The cells should be fixed in 4% formaldehyde and permeabilized with Triton X-100. The antibody for the target protein is combined with marker antibodies targeting gamma tubulin (to show microtubules) and calreticulin (to show the endoplasmic reticulum or ER), respectively. The nucleus is counterstained with 4',6-diamidino-2-phenylindole (DAPI). The primary antibodies are detected with the help of species-specific secondary antibodies labeled with different fluorophores (Alexa Fluor 488 for the protein of interest, Alexa Fluor 555 for microtubules, and Alexa Fluor 647 for ER). The cells are imaged using a laser scanning confocal microscope with a 63X objective. The different fluorophores are displayed as different channels in multicolor images, with the protein of interest shown in green, the nucleus in blue, microtubules in red, and the ER in yellow. You can use images in png or jpg format with any size.
