@@ -51,7 +51,7 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 
 -----------------------------------------------------------
 
-# Predicting Protein Subcellular Location
+# Predicting Protein Subcellular Location with HoliLoc Vesion: 0.1.0
 
 * You can predict the subcellular location of your protein of interest by simply providing a confocal microscopy image and UniProt ID.
 * You can use any model you like, HoliLoc or feature based models (image, sequence or PPI).
