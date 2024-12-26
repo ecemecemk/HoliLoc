@@ -65,7 +65,7 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 * Run the command below by specifying modality type and target protein's Uniprot ID (e.g. protein_sl_predictor.py --target_protein P68431 --modality HoliLoc)
 * Modalities can be: HoliLoc, Image, Sequence or PPI
 ```
-python protein_sl_predictor.py --target_protein <target protein> --modality
+python protein_sl_predictor.py --target_protein <target protein> --modality <modality choice>
 
 ```
 -------------------------------------------------------------------
