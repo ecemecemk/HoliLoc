@@ -60,7 +60,7 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 * You can use any model you like, HoliLoc or feature based models (image, sequence or PPI).
 * Open a folder to work in, put the target image inside with the name of the target protein in Uniprot ID (e.g. P68431.png)
 * Create a virtual environment inside the file and install all dependencies.
-* Please download all necessary files from [here]([https://drive.google.com/file/d/1PEnrMZsGI52zts6NF5EC-Nn5Nn2U0wNP/view?usp=drive_link](https://drive.google.com/file/d/15Z6WYs9Cbtw33oM9Oea9e4sGYxM8b1vA/view?usp=sharing)). This file is consisting of embeddings, example image and multi-location models and protein_sl_predictor.py file. Unzip the file and copy all the files into the folder you are working in.
+* Please download all necessary files from [here](https://drive.google.com/file/d/15Z6WYs9Cbtw33oM9Oea9e4sGYxM8b1vA/view?usp=sharing). This file is consisting of embeddings, example image and multi-location models and protein_sl_predictor.py file. Unzip the file and copy all the files into the folder you are working in.
 * Open terminal and navigate to the downloaded file's directory where protein_sl_predictor.py is located as well.
 * Run the command below by specifying modality type and target protein's Uniprot ID (e.g. protein_sl_predictor.py --target_protein P68431 --modality HoliLoc)
 * Modalities can be: HoliLoc, Image, Sequence or PPI
