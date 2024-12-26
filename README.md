@@ -37,10 +37,12 @@ HoliLoc Model leverages joint fusion, combining feature representations from int
 
 Make sure you have the following dependencies installed before running the scripts:
 
-- [pandas](https://pandas.pydata.org/): `pip install pandas` Version: 2.1.4
-- [scikit-learn](https://scikit-learn.org/): `pip install scikit-learn` Version: 1.3.2
-- [OpenCV](https://opencv.org/): `pip install opencv-python` Version: 4.8.1.78
-- [TensorFlow](https://www.tensorflow.org/): `pip install tensorflow` Version: 2.15.0
+pandas: pip install pandas Version: 2.0.3
+numpy: pip install numpy Version: 1.24.3
+scikit-learn: pip install scikit-learn Version: 1.3.2
+OpenCV: pip install opencv-python Version: 4.10.0.84
+TensorFlow: pip install tensorflow Version: 2.13.0
+Python: Version: 3.8.10
 
 ## Image Dependencies
 Protein confocal microscopy images need to be acquired in the following manner. The cells should be fixed in 4% formaldehyde and permeabilized with Triton X-100. The antibody for the target protein is combined with marker antibodies targeting gamma tubulin (to show microtubules) and calreticulin (to show the endoplasmic reticulum or ER), respectively. The nucleus is counterstained with 4',6-diamidino-2-phenylindole (DAPI). The primary antibodies are detected with the help of species-specific secondary antibodies labeled with different fluorophores (Alexa Fluor 488 for the protein of interest, Alexa Fluor 555 for microtubules, and Alexa Fluor 647 for ER). The cells are imaged using a laser scanning confocal microscope with a 63X objective. The different fluorophores are displayed as different channels in multicolor images, with the protein of interest shown in green, the nucleus in blue, microtubules in red, and the ER in yellow. You can use images in png or jpg format with any size.
@@ -56,24 +58,16 @@ Also, for each subcellular location HoliLoc and individual feature based models 
 
 * You can predict the subcellular location of your protein of interest by simply providing a confocal microscopy image and UniProt ID.
 * You can use any model you like, HoliLoc or feature based models (image, sequence or PPI).
-* Please download all necessary files from [here](https://drive.google.com/file/d/1PEnrMZsGI52zts6NF5EC-Nn5Nn2U0wNP/view?usp=drive_link). This file is consisting of embeddings, example image and multi-location models and protein_sl_predictor.py file. Unzip the file.
+* Open a folder to work in, put the target image inside with the name of the target protein in Uniprot ID (e.g. P68431.png)
+* Create a virtual environment inside the file and install all dependencies.
+* Please download all necessary files from [here]([https://drive.google.com/file/d/1PEnrMZsGI52zts6NF5EC-Nn5Nn2U0wNP/view?usp=drive_link](https://drive.google.com/file/d/15Z6WYs9Cbtw33oM9Oea9e4sGYxM8b1vA/view?usp=sharing)). This file is consisting of embeddings, example image and multi-location models and protein_sl_predictor.py file. Unzip the file and copy all the files into the folder you are working in.
 * Open terminal and navigate to the downloaded file's directory where protein_sl_predictor.py is located as well.
-* Run the command below by specifying model type you want, image, sequence, PPI, or HoliLoc.
+* Run the command below by specifying modality type and target protein's Uniprot ID (e.g. protein_sl_predictor.py --target_protein P68431 --modality HoliLoc)
+* Modalities can be: HoliLoc, Image, Sequence or PPI
+```
+python protein_sl_predictor.py --target_protein <target protein> --modality
 
 ```
-python protein_sl_predictor.py --model_type image, sequence, PPI, or HoliLoc
-
-```
-
-* The script will prompt you for the following information:
-  
-* Enter the UniProt ID of the target protein: e.g., P68431.
-* Enter the path to the protein image: e.g., P68431.png.
-* Enter the path to the Holiloc model file: HoliLoc.h5
-* Enter the path to the sequence embeddings file: sequence_embeddings_all_proteins.h5
-* Enter the path to the PPI embeddings CSV file: human_ppi_embeddings_all_proteins.csv
-
-
 -------------------------------------------------------------------
 # Training and Evaluating Models   
 
