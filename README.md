@@ -28,7 +28,6 @@ The architecture is designed for input data with dimensions (224,). Model is
 compiled using the Adam optimizer with a binary cross-entropy loss. For the detailed model structure: [HoliLoc PPI Model Structure](https://github.com/ecemecemk/HoliLoc/blob/Predicting-Protein-Subcellular-Location-with-HoliLoc-Version-1.0.0/Figures/PPI_model_1.0.0.svg).
 
 
-
 ## Model Fusion (HoliLoc)
 
 HoliLoc Model leverages joint fusion, combining feature representations from intermediate layers of neural networks with data from three modalities—image, sequence, and interactome. This fusion creates a potent multi-modal neural network. The feature vector undergoes a FFN with 17 layers, including 6 dense layers, batch normalization, activation, and dropout layers. The output layer, using sigmoid activation, enables multi-label classification with 22 classes. Compiled with the Adam optimizer and binary cross-entropy loss, the model has a total of 4,663,606 parameters, with 4,654,390 trainable and an additional 9,216 non-trainable. For the detailed model structure: [HoliLoc Model Structure](https://github.com/ecemecemk/HoliLoc/blob/Predicting-Protein-Subcellular-Location-with-HoliLoc-Version-1.0.0/Figures/HoliLoc_model_1.0.0.svg).
@@ -73,7 +72,7 @@ python protein_sl_predictor.py --target_protein <target protein> --modality <mod
 
 ## Train
 
-* If you want to reproduce HoliLoc model training please download necessery protein information, image feature vector, sequence and PPI embeddign files with HoliLoc_Train_Reproduce.py from [here](https://drive.google.com/file/d/13qtm6UMBX6KOUZ6XJ9_h5mMNl5LmRwk5/view?usp=drive_link). Unzip the file.
+* If you want to reproduce HoliLoc model training please download necessary protein information, image feature vector, sequence and PPI embeddign files with HoliLoc_Train_Reproduce.py from [here](https://drive.google.com/file/d/13qtm6UMBX6KOUZ6XJ9_h5mMNl5LmRwk5/view?usp=drive_link). Unzip the file.
 * Open terminal and navigate to the downloaded file's directory where  HoliLoc_Train_Reproduce.py is located as well.
 * Run the command below.
 * You will obtain the model file in the name you specifed in the "output_model" section as output.
