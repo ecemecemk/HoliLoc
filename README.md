@@ -72,46 +72,25 @@ python protein_sl_predictor.py --target_protein <target protein> --modality <mod
 
 ## Train
 
-* If you want to reproduce HoliLoc model training please download necessary protein information, image feature vector, sequence and PPI embeddign files with HoliLoc_Train_Reproduce.py from [here](https://drive.google.com/file/d/13qtm6UMBX6KOUZ6XJ9_h5mMNl5LmRwk5/view?usp=drive_link). Unzip the file.
-* Open terminal and navigate to the downloaded file's directory where  HoliLoc_Train_Reproduce.py is located as well.
+* If you want to reproduce HoliLoc model training please download necessary files from [here](https://drive.google.com/file/d/1nDz11ZFf9XKwVPHR31fr2GrADlcWzS6h/view?usp=sharing). Unzip the file.
+* Open terminal and navigate to the downloaded file's directory.
 * Run the command below.
-* You will obtain the model file in the name you specifed in the "output_model" section as output.
 
 ```
-python HoliLoc_Train_Reproduce.py --train_data HoliLoc_Train_Target.csv --img_feature_vectors Image_Feature_Vectors_Train.npy --sequence_embeddings Sequence_Embeddings_Train.npy --ppi_embeddings PPI_Embeddings_Train.npy --output_model holiloc_model.h5
-```
+python HoliLoc_Train_Reproduce.py
 
-* Provide the indicated arguments for your task.
-
-* --train_data: Name of protein information file, HoliLoc_Train_Target.csv.
-* --img_feature_vectors: Name of image feature vectors file, Image_Feature_Vectors_Train.npy.
-* --sequence_embeddings_path: Name of sequence embeddings file, Sequence_Embeddings_Train.npy.
-* --ppi_embeddings_path: Name of PPI embeddings file, PPI_Embeddings_Train.npy.
-* --output_model: Name of the output HoliLoc model e.g. holiloc_model_repro.h5.
-
-  
+```  
 
 ## Evaluate
 
 * You can evaluate HoliLoc model with HoliLoc test dateset.
-* Please download all necessary files from [here](https://drive.google.com/file/d/1qUM7t9D9RXMGu2BaFS1_u00aLUbXHOr8/view?usp=drive_link). Unzip the file.
-* Open terminal and navigate to the downloaded file's directory where HoliLoc_Test.py is located as well.
-* Add model file you want to evaluate to the directory, e.g. HoliLoc.h5.
+* Please download all necessary files from [here](https://drive.google.com/file/d/11SS_Xk9rtuo_FTBQFTUjJiYmdnIJ907h/view?usp=sharing). Unzip the file.
+* Open terminal and navigate to the downloaded file's directory.
 * Run the command below.
 
 ```
-python HoliLoc_Test.py --model_path HoliLoc.h5 --test_data HoliLoc_Test_Target.csv --img_feature_vectors Image_Feature_Vectors_Test.npy --sequence_embeddings Sequence_Embeddings_Test.npy --ppi_embeddings PPI_Embeddings_Test.npy
+python HoliLoc_Test_Reproduce.py
 ```
-
-* Provide the indicated arguments for your task.
-
-* --model_path: Path of model h5 file e.g. HoliLoc.h5.
-* --test_data: Name HoliLoc_Test_Target.csv.
-* --img_feature_vectors: Name of image feature vectors file, Image_Feature_Vectors_Test.npy.
-* --sequence_embeddings: Name of sequence embeddings file, Sequence_Embeddings_Test.npy.
-* --ppi_embeddings: Name of PPI embeddings file, PPI_Embeddings_Test.npy.
-
-
 
 -------------------------------------------------------------------------------------
 # License
